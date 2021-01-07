@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>CalcUrGrade</title>  
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">  
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <form> 
+        <div class = "inGrade"> 
+            Input Grade: <input type = "text" id = "grade_in" size = 10> 
+        </div>  
+        <div class ="inGradeWeight"> 
+            Input Grade Weight: <input type = "text" id = "grade_per" size = 8>  
+        </div>
+       <div class = "calcButton"> 
+            <button type ="button" onclick= "calculate()">Calculate</button>
+       </div> 
+       <div class = "clearButton"> 
+        <button type ="clear" onclick= "clearVals()">Clear</button>
+       </div>
+   </form>  
+
+    <div id ="update"></div> 
+    <div class = "resultOut"> 
+    <div id= "result"></div>  
+    <div id= "grade_val"></div>
+    
+</body> 
+<script src ="popup.js"></script>   
+</html> 
